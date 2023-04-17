@@ -1,6 +1,6 @@
-# Mandelbrot Set Plotting Function
+# Mandelbrot and Julia Set Plotting Functions
 
-This Python code provides a function, `mandelplot`, for plotting the Mandelbrot set for a given range of the complex plane. It uses the Numpy, Matplotlib, and Numba libraries to calculate and plot the Mandelbrot set efficiently.
+This Python code provides 2 functions, `mandelplot` and `Julia`, for plotting the [Mandelbrot](https://simple.wikipedia.org/wiki/Mandelbrot_set) and [Julia](https://en.wikipedia.org/wiki/Julia_set) set for a given range of the complex plane. It uses the Numpy, Matplotlib, and Numba libraries to calculate and plot the sets efficiently.
 
 ## Prerequisites
 
@@ -9,7 +9,7 @@ This Python code provides a function, `mandelplot`, for plotting the Mandelbrot 
 -   Matplotlib
 -   Numba
 
-## Function Usage
+## Usage
 ```python
 
 mandelplot(x, y, size, width, height, max_iters, cmap='twilight', dpi=450, save=True)
@@ -79,3 +79,5 @@ julia(0, 0, 1.2, 1500, 1500, -1.476 + 0.0j, 1000, cmap='inferno', save=False)
 ```
 ##### Output:
 ![Julia's cross](images/x0_y0_size1.2_w1500_h1500_c(-1.476+0j)_inferno.png)
+
+There's a set of precomputed 5500x5500 images in the `images` folder, and other interesting Julia c parameters to try can be found on the wikipedia page: https://en.wikipedia.org/wiki/Julia_set
